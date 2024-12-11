@@ -1,16 +1,16 @@
 'use client';
 
-import { Html, OrbitControls, Stats, useProgress } from '@react-three/drei';
-import { useFrame, useThree, Canvas } from '@react-three/fiber';
-import { Vector3 } from 'three';
-import Box from './components/Box';
+import { Html, Stats, useProgress } from '@react-three/drei';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Leva, useControls } from 'leva';
 import { Perf } from 'r3f-perf';
 import React, { Suspense, useEffect, useState } from 'react';
+import { Vector3 } from 'three';
 import Credits from './components/Credit';
 import Debug from './components/Debug';
 import './index.scss';
+import Suzzanes from './components/Suzzanes';
 
 
 function Loader() {
@@ -97,18 +97,8 @@ export default function Page() {
 
                     {perf ? <Perf align="top-right" /> : null}
                     <Suspense fallback={null}>
-
-                        {[...Array(5).keys()].map((i) => (
-                            <group key={i * 6}>
-                                <Box position={[-5, -3 + i * 1.5, 0]} />
-                                <Box position={[-3, -3 + i * 1.5, 0]} />
-                                <Box position={[-1, -3 + i * 1.5, 0]} />
-                                <Box position={[1, -3 + i * 1.5, 0]} />
-                                <Box position={[3, -3 + i * 1.5, 0]} />
-                                <Box position={[5, -3 + i * 1.5, 0]} />
-                            </group>
-                        ))}
-                        <Rig />
+                        <Suzzanes />
+                        {/* <Rig /> */}
                     </Suspense>
 
                     <EffectComposer autoClear={false}>
