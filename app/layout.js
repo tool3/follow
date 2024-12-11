@@ -1,13 +1,12 @@
 
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata = {
   title: {
-    default: 'RAGEBOARD by Tal Hayut',
+    default: 'Follow by Tal Hayut',
     template: '%s | talhayut'
   },
-  metadataBase: new URL('https://rageboard.vercel.app'),
-  description: `rageboard`,
+  metadataBase: new URL('https://follow.vercel.app'),
+  description: `follow`,
   icons: [
     {
       rel: 'apple-touch-icon',
@@ -16,9 +15,9 @@ export const metadata = {
   ],
   twitter: {
     card: 'summary_large_image',
-    title: 'RAGEBOARD',
+    title: 'follow',
     creator: 'Tal Hayut',
-    siteId: 'rageboard'
+    siteId: 'follow'
   }
 }
 
@@ -26,7 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>{children}</body>
-      {/* <GoogleAnalytics gaId={'G-50Y8D0TG3M'} /> */}
     </html>
   )
 }

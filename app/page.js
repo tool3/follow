@@ -1,6 +1,6 @@
 'use client';
 
-import { Html, Stats, useProgress } from '@react-three/drei';
+import { Html, OrbitControls, Stats, useProgress } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Leva, useControls } from 'leva';
@@ -100,7 +100,7 @@ export default function Page() {
                         <Suzzanes />
                         {/* <Rig /> */}
                     </Suspense>
-
+                    {/* <OrbitControls /> */}
                     <EffectComposer autoClear={false}>
                         {bloom.enabled ?
                             <Bloom

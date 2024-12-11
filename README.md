@@ -1,7 +1,7 @@
-# Glass
+# Follow
 
-![](./public/images/glass.png)
+![](./public/images/suzzannes.png)
 
-exploring different matcaps and their effect on 3d text.   
+exploring different matcaps with cool follow animation.
 
 written with `react-three-fiber` and its family.   
