@@ -23,19 +23,18 @@ export function Suzanne(props) {
     })
 
     useEffect(() => {
-        // Set positions
         for (let i = 0; i < count; i++) {
             temp.position.set(Math.random(), Math.random(), Math.random())
             temp.updateMatrix()
             instancedMeshRef.current.setMatrixAt(i, temp.matrix)
         }
-        // Update the instance
+
         instancedMeshRef.current.instanceMatrix.needsUpdate = true
     }, [])
 
     const matcap = useControls('Suzanne Matcap', {
         matcap: {
-            value: 'glass_16.png',
+            value: 'glass_23.png',
             options
         }
     })
@@ -47,8 +46,7 @@ export function Suzanne(props) {
             <mesh
                 castShadow
                 receiveShadow
-                geometry={nodes.Suzanne.geometry}
-                material={nodes.Suzanne.material}>
+                geometry={nodes.Suzanne.geometry}>
                 <meshMatcapMaterial matcap={map} />
             </mesh>
         </instancedMesh>

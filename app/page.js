@@ -73,7 +73,7 @@ export default function Page() {
 
     const bloom = useControls('bloom', {
         enabled: true,
-        intensity: 3,
+        intensity: 1.5,
         luminanceThreshold: 0.1,
         luminanceSmoothing: 0.1,
     }, { collapsed: true, order: 1 })
