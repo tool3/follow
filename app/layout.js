@@ -5,7 +5,7 @@ export const metadata = {
     default: 'Follow by Tal Hayut',
     template: '%s | talhayut'
   },
-  metadataBase: new URL('https://follow.vercel.app'),
+  metadataBase: new URL('https://followd.vercel.app'),
   description: `follow`,
   icons: [
     {
