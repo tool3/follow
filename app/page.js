@@ -65,8 +65,7 @@ export default function Page() {
         }
     }, [])
 
-    const { fps, perf, background, rotate } = useControls({
-        rotate: false,
+    const { fps, perf, background } = useControls({
         fps: { value: false, color: 'red' },
         perf: false,
         background: 'black',
