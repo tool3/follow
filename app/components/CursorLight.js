@@ -22,7 +22,7 @@ export default function CursorLight() {
             step: 0.01
         },
         intensity: {
-            value: 1,
+            value: 3,
             min: 0,
             max: 10,
             step: 0.001
