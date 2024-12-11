@@ -101,7 +101,7 @@ export default function Page() {
                         {/* <Rig /> */}
                     </Suspense>
                     {/* <OrbitControls /> */}
-                    <EffectComposer autoClear={false}>
+                    <EffectComposer multisampling={0}>
                         {bloom.enabled ?
                             <Bloom
                                 intensity={bloom.intensity}
