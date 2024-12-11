@@ -30,6 +30,8 @@ export function Suzanne(props) {
         }
 
         instancedMeshRef.current.instanceMatrix.needsUpdate = true
+        nodes.Suzanne.geometry.computeVertexNormals(true);
+        // nodes.Suzzane.geometry.computeBoundingBox();    
     }, [])
 
     const matcap = useControls('Suzanne Matcap', {
@@ -42,11 +44,8 @@ export function Suzanne(props) {
     const [map] = useLoader(TextureLoader, [`/textures/matcaps/${matcap.matcap}`]);
 
     return (
-        <instancedMesh ref={instancedMeshRef} {...props}>
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Suzanne.geometry}>
+        <instancedMesh ref={instancedMeshRef} {...props} count={30}>
+            <mesh geometry={nodes.Suzanne.geometry}>
                 <meshMatcapMaterial matcap={map} />
             </mesh>
         </instancedMesh>
