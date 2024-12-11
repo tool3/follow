@@ -11,6 +11,7 @@ import Credits from './components/Credit';
 import Debug from './components/Debug';
 import './index.scss';
 import Suzzanes from './components/Suzzanes';
+import CursorLight from './components/CursorLight';
 
 
 function Loader() {
@@ -100,6 +101,8 @@ export default function Page() {
                         {/* <Rig /> */}
                     </Suspense>
                     {/* <OrbitControls /> */}
+                    {/* <ambientLight intensity={0.5} /> */}
+                    <CursorLight />
                     <EffectComposer multisampling={0}>
                         {bloom.enabled ?
                             <Bloom

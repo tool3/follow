@@ -31,7 +31,6 @@ export function Suzanne(props) {
 
         instancedMeshRef.current.instanceMatrix.needsUpdate = true
         nodes.Suzanne.geometry.computeVertexNormals(true);
-        // nodes.Suzzane.geometry.computeBoundingBox();    
     }, [])
 
     const matcap = useControls('Suzanne Matcap', {

@@ -1,4 +1,4 @@
-import { Suzanne } from './Suzzane'
+import Eye from './Eye'
 
 export default function Suzzanes({ text, ...props }) {
     return (
@@ -6,12 +6,12 @@ export default function Suzzanes({ text, ...props }) {
             {
                 [...Array(5).keys()].map((i) => (
                     <group key={i * 6}>
-                        <Suzanne scale={0.5} position={[-5, -3 + i * 1.5, 0]} />
-                        <Suzanne scale={0.5} position={[-3, -3 + i * 1.5, 0]} />
-                        <Suzanne scale={0.5} position={[-1, -3 + i * 1.5, 0]} />
-                        <Suzanne scale={0.5} position={[1, -3 + i * 1.5, 0]} />
-                        <Suzanne scale={0.5} position={[3, -3 + i * 1.5, 0]} />
-                        <Suzanne scale={0.5} position={[5, -3 + i * 1.5, 0]} />
+                        <Eye scale={0.3} position={[-5, -3 + i * 1.5, 0]} />
+                        <Eye scale={0.3} position={[-3, -3 + i * 1.5, 0]} />
+                        <Eye scale={0.3} position={[-1, -3 + i * 1.5, 0]} />
+                        <Eye scale={0.3} position={[1, -3 + i * 1.5, 0]} />
+                        <Eye scale={0.3} position={[3, -3 + i * 1.5, 0]} />
+                        <Eye scale={0.3} position={[5, -3 + i * 1.5, 0]} />
                     </group>
                 ))
             }
