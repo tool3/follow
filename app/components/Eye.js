@@ -73,7 +73,7 @@ export default function Eye(props) {
     }, [])
 
     return (
-        <instancedMesh ref={instancedMeshRef} {...props} count={30}>
+        <instancedMesh ref={instancedMeshRef} {...props} count={1}>
             <mesh
                 castShadow
                 receiveShadow

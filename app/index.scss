@@ -206,24 +206,6 @@ body {
   }
 }
 
-// input:checked + label {
-//   background-color: orangered !important;
-//   &:hover {
-//     outline: 1px solid orangered;
-//   }
-// }
-
-// input + label {
-//   background-color: #373c4b !important;
-// }
-
-// input + label {
-//   background-color: unset;
-//   &:hover {
-//     outline: 1px solid orangered;
-//   }
-// }
-
 .credits {
   position: absolute;
   display: flex;
@@ -237,9 +219,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 50%;
   background-position: 0% 55%;
-  background: -webkit-linear-gradient(#6973ff, #3f9ff3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 
   a {
     all: unset;
