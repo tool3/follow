@@ -70,6 +70,8 @@ export default function Eye(props) {
         }
 
         instancedMeshRef.current.instanceMatrix.needsUpdate = true
+
+        materials.Eye_Iris.roughness = 0;
     }, [])
 
     return (
@@ -101,7 +103,7 @@ export default function Eye(props) {
                 geometry={nodes.eyeball_1_eye_1.geometry}
                 material={materials.Eye_white}
                 rotation={[Math.PI / 2, 0, 0]}
-            />
+            />  
         </instancedMesh>
     )
 }

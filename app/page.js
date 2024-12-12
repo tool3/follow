@@ -73,7 +73,7 @@ export default function Page() {
     });
 
     const bloom = useControls('bloom', {
-        enabled: true,
+        enabled: false,
         intensity: 1.5,
         luminanceThreshold: 0.1,
         luminanceSmoothing: 0.1,
