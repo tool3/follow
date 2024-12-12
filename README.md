@@ -1,6 +1,6 @@
 # Follow
 
-![](./public/images/suzzannes.png)
+![](./public/images/follow.png)
 
 exploring different matcaps with cool follow animation.
 

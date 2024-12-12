@@ -19,7 +19,7 @@ export function Suzanne(props) {
     useFrame(({ mouse, viewport }) => {
         const x = (mouse.x * viewport.width) / 2.5
         const y = (mouse.y * viewport.height) / 2.5
-        instancedMeshRef.current.lookAt(x, y, 1)
+        // instancedMeshRef.current.lookAt(x, y, 1)
     })
 
     useEffect(() => {

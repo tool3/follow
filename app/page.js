@@ -1,6 +1,6 @@
 'use client';
 
-import { Html, OrbitControls, Stats, useProgress } from '@react-three/drei';
+import { Environment, Html, OrbitControls, Stats, useProgress } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Leva, useControls } from 'leva';
@@ -12,6 +12,7 @@ import Debug from './components/Debug';
 import './index.scss';
 import Suzzanes from './components/Suzzanes';
 import CursorLight from './components/CursorLight';
+import Eye from './components/Eye';
 
 
 function Loader() {
@@ -98,10 +99,12 @@ export default function Page() {
                     {perf ? <Perf align="top-right" /> : null}
                     <Suspense fallback={null}>
                         <Suzzanes />
+                        {/* <Eye /> */}
                         {/* <Rig /> */}
                     </Suspense>
-                    {/* <OrbitControls /> */}
-                    {/* <ambientLight intensity={0.5} /> */}
+                    <OrbitControls />
+                    {/* <ambientLight intensity={1} /> */}
+                    <Environment files="./textures/environments/studio_small_03_2k.hdr" environmentIntensity={0.3} resolution={1024} />
                     <CursorLight />
                     <EffectComposer multisampling={0}>
                         {bloom.enabled ?
