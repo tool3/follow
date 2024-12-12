@@ -13,7 +13,7 @@ export default function CursorLight() {
 
     const { light, distance, intensity } = useControls('Cursor Light', {
         light: {
-            value: '#bef3ff',
+            value: '#ffffff',
         },
         distance: {
             value: 3,
