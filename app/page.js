@@ -1,6 +1,6 @@
 'use client';
 
-import { Environment, Html, OrbitControls, Stats, useProgress } from '@react-three/drei';
+import { Html, Stats, useProgress } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Leva, useControls } from 'leva';
@@ -8,11 +8,10 @@ import { Perf } from 'r3f-perf';
 import React, { Suspense, useEffect, useState } from 'react';
 import { Vector3 } from 'three';
 import Credits from './components/Credit';
-import Debug from './components/Debug';
-import './index.scss';
-import Suzzanes from './components/Suzzanes';
 import CursorLight from './components/CursorLight';
-import Eye from './components/Eye';
+import Debug from './components/Debug';
+import Suzzanes from './components/Suzzanes';
+import './index.scss';
 
 
 function Loader() {
@@ -104,7 +103,7 @@ export default function Page() {
                     </Suspense>
                     {/* <OrbitControls /> */}
                     {/* <ambientLight intensity={1} /> */}
-                    <Environment files="./textures/environments/studio_small_03_2k.hdr" environmentIntensity={0.3} resolution={1024} />
+                    {/* <Environment files="./textures/environments/studio_small_03_2k.hdr" environmentIntensity={0.3} resolution={1024} /> */}
                     <CursorLight />
                     <EffectComposer multisampling={0}>
                         {bloom.enabled ?
