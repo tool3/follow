@@ -1,4 +1,4 @@
-# Follow
+# Followers
 
 ![](./public/images/follow.png)
 

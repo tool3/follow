@@ -30,7 +30,7 @@ function Loader() {
     return (
         <Html style={style} center className='overlay'>
             <div className="title-wrapper">
-                <div className="title">FOLLOW</div>
+                <div className="title">FOLLOWERS</div>
                 <div className="loading">{progress.toFixed(2)} % loaded</div>
             </div>
         </Html>
@@ -96,11 +96,10 @@ export default function Page() {
                 <Suspense fallback={<Loader />}>
 
                     {perf ? <Perf align="top-right" /> : null}
-                    <Suspense fallback={null}>
-                        <Suzzanes />
-                        {/* <Eye /> */}
-                        {/* <Rig /> */}
-                    </Suspense>
+
+                    <Suzzanes />
+                    {/* <Eye /> */}
+                    {/* <Rig /> */}
                     {/* <OrbitControls /> */}
                     {/* <ambientLight intensity={1} /> */}
                     {/* <Environment files="./textures/environments/studio_small_03_2k.hdr" environmentIntensity={0.3} resolution={1024} /> */}

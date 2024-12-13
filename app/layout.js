@@ -2,7 +2,7 @@
 
 export const metadata = {
   title: {
-    default: 'Follow by Tal Hayut',
+    default: 'Followers by Tal Hayut',
     template: '%s | talhayut'
   },
   metadataBase: new URL('https://followd.vercel.app'),
@@ -15,9 +15,9 @@ export const metadata = {
   ],
   twitter: {
     card: 'summary_large_image',
-    title: 'follow',
+    title: 'followers',
     creator: 'Tal Hayut',
-    siteId: 'follow'
+    siteId: 'followers'
   }
 }
 
