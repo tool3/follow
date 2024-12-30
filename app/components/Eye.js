@@ -71,11 +71,10 @@ export default function Eye(props) {
 
         instancedMeshRef.current.instanceMatrix.needsUpdate = true
 
-        materials.Eye_Iris.roughness = 0;
     }, [])
 
     return (
-        <instancedMesh ref={instancedMeshRef} {...props} count={1}>
+        <instancedMesh ref={instancedMeshRef} {...props}>
             <mesh
                 castShadow
                 receiveShadow
